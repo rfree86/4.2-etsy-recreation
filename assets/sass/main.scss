@@ -1,0 +1,141 @@
+@import '../../bower_components/bourbon/app/assets/stylesheets/bourbon';
+$gutter: em(10) !global;
+$min-width: 950px !global;
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+
+//////////////
+/////////////
+.main-container{
+  @include outer-container;
+  margin: 0 auto;
+
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+img{
+  width: 100%;
+}
+
+.header,
+.nav,
+.page-content,
+.footer{
+  @include span-columns(12);
+
+}
+////////////////
+////////////////
+
+.header{
+  height: 100px;
+
+}
+.nav{
+  height: 50px;
+
+}
+.page-content{
+  height: 1500px;
+
+  @include fill-parent();
+  @include row(table);
+  background-color: RGBA(245, 245, 241, 1)
+
+}
+.footer{
+  height: 75px;
+
+}
+/////////////////
+//main content
+/////////////////
+.sidebar{
+  @include span-columns(4);
+  @include pad();
+  position: relative;
+  height: 400px;
+  padding-left: 0;
+
+}
+
+.search-results{
+  @include span-columns(8);
+  @include reset-display;
+  @include pad();
+  position: relative;
+}
+.all-cat{
+  background-color: white;
+  margin: 0;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.sidebar_list{
+  background-color: white;
+  margin: 0;
+  padding-left: 10px;
+}
+.sidebar-header{
+  padding-left: 0;
+}
+.sidebar-link{
+  padding-bottom: 5px;
+}
+/////////SEARCH RESULTS////////
+.whiskey_list{
+
+}
+.whiskey{
+  display: block;
+  @include span-columns(2.7 of 8);
+@include omega();
+margin-right: 3px;
+
+  border: 1px solid black;
+}
+.image-div{
+  height: 135px;
+  width: 170px;
+  @include clearfix;
+}
+.r_i_title{
+  margin: 0px;
+}
+.related-info{
+  font-size: 10px
+}
+///////header and nav
+
+.header-left{
+  @include span-columns(3);
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+.header-right{
+  @include span-columns(4);
+   @include shift(5);
+  @include omega;
+}
+.h-r-link1,
+.h-r-button2,
+.h-r-button3,
+.h-r-button4,
+.h-r-button5{
+  display: inline-block;
+  text-align: center;
+}
+.nav-list{
+  @include span-columns(12 of 12);
+  display: inline-block;
+  vertical-align: middle;
+}
+.nav-links{
+
+  display: inline-block;
+  vertical-align: middle;
+}

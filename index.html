@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="assets/stylesheet/main.css">
+  <title>4.2-etsy-recreation</title>
+</head>
+<body>
+    <div class= "main-container">
+  <div class= "header">
+     <ul class="header-left">
+      <li class="logo"><img src="" alt=""></li>
+      <li class="search">
+        <form action="">
+          <input class="search_bar" type="text" placeholder="ENTER SEARCH">
+          <button class="search_button">SEARCH</button>
+        </form>
+      </li>
+    </ul>
+    <ul class="header-right">
+      <li class="h-r-link1"><a href="">Sell on Etsy</a></li>
+      <li class="h-r-button2"><button>Home</button></li>
+      <li class="h-r-button3"><button>Favorites</button></li>
+      <li class="h-r-button4"><button>You</button></li>
+      <li class="h-r-button5"><button>Cart</button></li>
+    </ul>
+  </div>
+  <div class="nav">
+  <ul class="nav-list">
+    <li class="nav-links"><a href="">Clothing & Accessories</a></li>
+    <li class="nav-links"><a href="">Jewelry</a></li>
+    <li class="nav-links"><a href="">Craft Supplies & Tools</a></li>
+    <li class="nav-links"><a href="">Weddings</a></li>
+    <li class="nav-links"><a href="">Entertainment</a></li>
+    <li class="nav-links"><a href="">Home & Living</a></li>
+    <li class="nav-links"><a href="">Kids & Baby</a></li>
+    <li class="nav-links"><a href="">Vintage</a></li>
+  </ul>
+  </div>
+
+<div class="page-content">
+  <div class="sidebar">
+    <h4 class="sidebar-header">Show results for:</h4>
+    <h6 class="all-cat">All Categories</h6>
+    <ul class="sidebar_list">
+      <li class="sidebar-link"><a href="">Home & Living</a></li>
+      <li class="sidebar-link"><a href="">Art & Collectibles</a></li>
+      <li class="sidebar-link"><a href="">Weddings</a></li>
+      <li class="sidebar-link"><a href="">Clothing</a></li>
+      <li class="sidebar-link"><a href="">Jewelry</a></li>
+      <li class="sidebar-link"><a href="">Paper & Party Supplies</a></li>
+      <li class="sidebar-link"><a href="">Acessories</a></li>
+      <li class="sidebar-link"><a href="">Craft Supplies & Tools</a></li>
+      <li class="sidebar-link"><a href="">Bags & Purses</a></li>
+      <li class="sidebar-link"><a href="">Bath & Beauty</a></li>
+      <li class="sidebar-link"><a href="">Shoes</a></li>
+      <li class="sidebar-link"><a href="">Books, Movies & Music</a></li>
+      <li class="sidebar-link"><a href="">Electronics & Accessories</a></li>
+      <li class="sidebar-link"><a href="">Toys & Games</a></li>
+      <li class="sidebar-link"><a href="">Pet Supplies</a></li>
+    </ul>
+  </div>
+  <div class="search-results">results
+    <ul class= "whiskey_list js_whiskey_list"></ul>
+  </div>
+  <script id="whiskey-template" type="text/x-handlebars-template">
+    <li class="whiskey">
+      <div class="image-div">
+        <img src="{{Images.[0].url_170x135}}" alt="{{title}}">
+      </div>
+      <div class="related-info">
+        <h6 class="r_i_title">{{title}}</h6>
+        <span>{{Shop.shop_name}}</span>
+        <span>${{price}} {{currency_code}}</span>
+      </div>
+    </li>
+  </script>
+
+</div>
+  <div class="footer">
+    <h6 class="footer-heading">2015 Etsy, Inc</h6>
+  </div>
+</div>
+<script src="bower_components/handlebars/handlebars.js"></script>
+<script src="assets/scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "4.2-etsy-recreation",
+  "version": "0.0.0",
+  "authors": [
+    "<Richard> <<rfree86@gmail.com>>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "handlebars": "~4.0.2",
+    "neat": "~1.7.2"
+  }
+}
